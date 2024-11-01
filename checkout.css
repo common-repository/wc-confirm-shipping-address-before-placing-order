@@ -1,0 +1,111 @@
+.wc-csabpo-overlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2147483647;
+    padding: 20px 10px 20px 10px;
+}
+.wc-csabpo-overlay h3 {
+    font-size: 32px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 30px 0px;
+    line-height: normal;
+}
+.wc-csabpo-modal {
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 4px;
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 600px;
+    overflow: auto;
+}
+.wc-csabpo-modal > p {
+    background-color: #fff2c3;
+    border: 2px solid #e8c02f;
+    border-radius: 4px;
+    padding: 10px;
+    color: #876e13;
+}
+.wc-csabpo-modal table {
+    border:none;
+    width: 100%;
+    border-collapse: collapse;
+}
+.wc-csabpo-modal table tr {
+    border-bottom: 1px solid #ececec;
+}
+.wc-csabpo-modal table th .required,
+.wc-csabpo-modal table th .optional {
+    display: none;
+}
+.wc-csabpo-modal table th,
+.wc-csabpo-modal table td {
+    text-align: right;
+    padding: 5px 5px 5px 15px!important;
+    text-transform: initial!important;
+    letter-spacing: initial!important;
+    border: none!important;
+}
+.wc-csabpo-modal table td {
+    text-align: left;
+    padding: 5px 15px 5px 5px;
+}
+.wc-csabpo-confirm {box-sizing:border-box;border-radius:4px;border:2px dashed red;padding:10px;margin:20px 0px 0px 0px;display:flex;width:100%;justify-content: center;}
+.wc-csabpo-confirm input {
+    outline: initial!important;
+    width: initial!important;
+    height: initial!important;
+    margin: 0px 8px 0px 0px!important;
+    background: none!important;
+    -webkit-box-shadow: initial!important;
+    box-shadow: initial!important;
+    border: initial!important;
+}
+.wc-csabpo-confirm.wc-csabpo-error {background-color: #ffcece;}
+.wc-csabpo-edit-shipping-address,
+.wc-csabpo-finalize-order {
+    padding:10px 30px;display:inline-block;background-color:#8c8c8c;color:white;margin-top:50px;float:right;cursor:pointer;border-radius:4px;float:left;
+}
+.wc-csabpo-finalize-order {
+    background-color:#00dc15;float:right;
+}
+.wc-csabpo-edit-shipping-address:hover,
+.wc-csabpo-finalize-order:hover {
+    opacity:0.8;
+}
+@media only screen and (max-width: 600px){
+    .wc-csabpo-modal {
+        font-size: 12px;
+        padding: 30px 20px 30px 20px;
+        min-width: initial;
+    }
+    .wc-csabpo-modal h3 {
+        font-size:24px;
+    }
+    .wc-csabpo-modal table th,
+    .wc-csabpo-modal table td {
+        padding: 5px 5px 0px 0px;
+    }
+    .wc-csabpo-modal table td {
+        padding-right: 0px;
+    }
+    .wc-csabpo-edit-shipping-address,
+    .wc-csabpo-finalize-order {
+        text-align:center;
+        padding: 10px 15px 10px 15px;
+        margin-top: 30px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .wc-csabpo-modal h3 {
+        font-size: 20px;
+    }
+}
